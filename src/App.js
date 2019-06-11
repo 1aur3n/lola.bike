@@ -1,6 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-141699006-1');
+ReactGA.pageview(window.location.hash);
 
 function App() {
   return (
@@ -16,9 +19,12 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Lola Dot Bike 
+          <code>www.lola.bike</code> 
         </a>
       </header>
+      <footer className="App-footer">
+        
+      </footer>
     </div>
   );
 }
